@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <script src="/assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página inicial aprimorada">
+  <title>Home - Sistema</title>
+
+  <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+        background-color: #343a40; /* Fundo cinza escuro */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 500px;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .btn-custom {
+        background-color: #007bff;
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-create-consultation {
+        background-color: #28a745;
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+
+    .btn-create-consultation:hover {
+        background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="container">
+  <h1 class="mb-4">Bem-vindo ao Sistema</h1>
+  <p>Gerencie suas tarefas de forma eficiente.</p>
+  <a href="/dashboard" class="btn btn-custom mt-3" aria-label="Acessar Dashboard">Acessar Dashboard</a>
+
+  <!-- Botão para criar consulta -->
+  <a href="/consultation/create" class="btn btn-create-consultation mt-3" aria-label="Criar Consulta">Criar Consulta</a>
+</main>
+
+<script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultas Agendadas</title>
+</head>
+<body>
+<h1>Consultas Agendadas</h1>
+<ul>
+    <th:block th:each="appointment : ${appointments}">
+        <li th:text="${appointment}"></li>
+    </th:block>
+</ul>
+<a href="/home">Voltar</a>
+</body>
+</html>
